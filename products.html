@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Barang</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="min-h-screen bg-stone-100 text-slate-900">
+  <header class="border-b border-stone-200 bg-white px-5 py-4">
+    <div class="mx-auto flex max-w-6xl items-center justify-between">
+      <h1 class="text-lg font-semibold">Ruang Stok</h1>
+      <a href="index.html" class="rounded-lg border border-stone-200 px-4 py-2 text-sm hover:bg-stone-50">Logout</a>
+    </div>
+  </header>
+  <div class="mx-auto grid max-w-6xl gap-5 px-5 py-6 md:grid-cols-[190px_1fr]">
+    <aside class="self-start rounded-xl border border-stone-200 bg-white p-2">
+      <nav class="grid grid-cols-4 gap-1 text-sm md:grid-cols-1">
+        <a href="template.html" class="flex items-center justify-center gap-2 rounded-lg px-3 py-2.5 text-slate-600 hover:bg-stone-100 md:justify-start"><i data-lucide="layout-dashboard" class="h-4 w-4"></i><span>Home</span></a>
+        <a href="products.html" class="flex items-center justify-center gap-2 rounded-lg bg-emerald-700 px-3 py-2.5 text-white md:justify-start"><i data-lucide="package" class="h-4 w-4"></i><span>Barang</span></a>
+        <a href="user.html" class="flex items-center justify-center gap-2 rounded-lg px-3 py-2.5 text-slate-600 hover:bg-stone-100 md:justify-start"><i data-lucide="user" class="h-4 w-4"></i><span>Akun</span></a>
+        <a href="setting.html" class="flex items-center justify-center gap-2 rounded-lg px-3 py-2.5 text-slate-600 hover:bg-stone-100 md:justify-start"><i data-lucide="settings" class="h-4 w-4"></i><span>Setel</span></a>
+      </nav>
+    </aside>
+    <main>
+      <div class="mb-5 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+        <div><p class="text-sm font-medium text-emerald-700">Gudang Kelas</p><h2 class="text-2xl font-semibold">Daftar Barang</h2></div>
+        <a href="add-produk.html" class="inline-flex items-center justify-center gap-2 rounded-lg bg-emerald-700 px-4 py-2.5 text-sm font-medium text-white hover:bg-emerald-800"><i data-lucide="plus" class="h-4 w-4"></i>Tambah Barang</a>
+      </div>
+      <section class="rounded-xl border border-stone-200 bg-white p-3">
+        <div class="grid gap-3">
+          <div class="grid grid-cols-[40px_1fr_70px_150px] items-center gap-3 rounded-lg bg-stone-50 px-3 py-2 text-sm font-medium text-slate-500">
+            <span>No</span><span>Nama Barang</span><span>Stok</span><span>Aksi</span>
+          </div>
+          <div class="grid grid-cols-[40px_1fr_70px_150px] items-center gap-3 px-3 py-2 text-sm"><span>1</span><span class="font-medium">Buku Catatan A5</span><span>64</span><span><a href="edit-produk.html" class="mr-2 inline-flex items-center gap-1 rounded-md border px-2 py-1"><i data-lucide="pencil" class="h-3.5 w-3.5"></i>Edit</a><button class="inline-flex items-center gap-1 rounded-md bg-red-50 px-2 py-1 text-red-700"><i data-lucide="trash-2" class="h-3.5 w-3.5"></i>Delete</button></span></div>
+          <div class="grid grid-cols-[40px_1fr_70px_150px] items-center gap-3 px-3 py-2 text-sm"><span>2</span><span class="font-medium">Pulpen Hitam Gel</span><span>118</span><span><a href="edit-produk.html" class="mr-2 inline-flex items-center gap-1 rounded-md border px-2 py-1"><i data-lucide="pencil" class="h-3.5 w-3.5"></i>Edit</a><button class="inline-flex items-center gap-1 rounded-md bg-red-50 px-2 py-1 text-red-700"><i data-lucide="trash-2" class="h-3.5 w-3.5"></i>Delete</button></span></div>
+          <div class="grid grid-cols-[40px_1fr_70px_150px] items-center gap-3 px-3 py-2 text-sm"><span>3</span><span class="font-medium">Map Plastik Biru</span><span>29</span><span><a href="edit-produk.html" class="mr-2 inline-flex items-center gap-1 rounded-md border px-2 py-1"><i data-lucide="pencil" class="h-3.5 w-3.5"></i>Edit</a><button class="inline-flex items-center gap-1 rounded-md bg-red-50 px-2 py-1 text-red-700"><i data-lucide="trash-2" class="h-3.5 w-3.5"></i>Delete</button></span></div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

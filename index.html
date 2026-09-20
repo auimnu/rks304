@@ -1,160 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aulia Imam Nugroho</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-
-<body>
-
-    <header>
-        <div class="font-medium bold">My Website</div>
-
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-
-    <main>
-
-        <!-- Home -->
-        <section id="home" class="home">
-            <div class="home-text">
-                <p>Hello, I'm</p>
-
-                <h1>Aulia Imam Nugroho</h1>
-
-                <h2>Cyber Security Student</h2>
-
-                <p>
-                    I am interested in cybersecurity, networking,
-                    web development, and learning new technologies.
-                </p>
-
-                <a href="#portfolio" class="button">My Portfolio</a>
-            </div>
-
-            <img src="asset/profile.png" alt="Aulia Imam Nugroho">
-        </section>
-
-
-        <!-- About -->
-        <section id="about" class="about">
-            <h2>About Me</h2>
-
-            <p>
-                I am a student who is currently learning Cyber Security.
-                I enjoy learning about computer networks, Linux,
-                web development, and basic cybersecurity.
-            </p>
-
-            <h3>My Skills</h3>
-
-            <ul>
-                <li>HTML & CSS</li>
-                <li>Python</li>
-                <li>Linux</li>
-                <li>Networking</li>
-                <li>Cyber Security</li>
-            </ul>
-
-            <h3>Education</h3>
-
-            <p>
-                <strong>Politeknik Negeri Batam</strong><br>
-                Cyber Security — 2025 - Present
-            </p>
-        </section>
-
-
-        <!-- Portfolio -->
-        <section id="portfolio" class="portfolio">
-            <h2>My Portfolio</h2>
-
-            <div class="projects">
-
-                <article>
-                    <span>01</span>
-                    <h3>Share and Secure</h3>
-
-                    <p>
-                        A simple file sharing project with
-                        encryption and decryption features.
-                    </p>
-
-                    <small>Python • Flask</small>
-                </article>
-
-
-                <article>
-                    <span>02</span>
-                    <h3>Cybersecurity Lab</h3>
-
-                    <p>
-                        Practice with Linux, networking,
-                        and network traffic analysis.
-                    </p>
-
-                    <small>Linux • Wireshark</small>
-                </article>
-
-
-                <article>
-                    <span>03</span>
-                    <h3>Web Development Practice</h3>
-
-                    <p>
-                        Small web development projects created while learning HTML, CSS, and Python.
-                    </p>
-
-                    <small>Web • Practice</small>
-                </article>
-
-            </div>
-        </section>
-
-
-        <!-- Contact -->
-        <section id="contact" class="contact">
-            <h2>Contact</h2>
-
-            <p>
-                Interested in discussing a project or just want to say hello?
-            </p>
-
-            <p>
-                Email:
-                <a href="mailto:aulia@example.com">
-                    aulia@example.com
-                </a>
-            </p>
-
-            <p>
-                GitHub:
-                <a href="https://github.com/" target="_blank">
-                    github.com
-                </a>
-            </p>
-
-            <p>
-                Location: Batam, Indonesia
-            </p>
-        </section>
-
-    </main>
-
-
-    <footer>
-        <p>&copy; 2026 Aulia Imam Nugroho</p>
-    </footer>
-
+<body class="min-h-screen bg-stone-100 text-slate-900">
+  <main class="flex min-h-screen items-center justify-center px-5">
+    <section class="w-full max-w-sm rounded-xl border border-stone-200 bg-white p-6 shadow-sm">
+      <div class="mb-6 text-center">
+        <span class="mx-auto mb-3 grid h-11 w-11 place-items-center rounded-lg bg-emerald-50 text-emerald-700">
+          <i data-lucide="lock-keyhole" class="h-5 w-5"></i>
+        </span>
+        <h1 class="text-xl font-semibold">Ruang Stok</h1>
+        <p class="mt-1 text-sm text-slate-500">Masuk ke halaman pengelolaan.</p>
+      </div>
+      <form action="template.html" method="get" class="space-y-4">
+        <label class="block">
+          <span class="text-sm font-medium text-slate-700">Username</span>
+          <input type="text" name="username" required class="mt-1 w-full rounded-lg border border-stone-200 px-3 py-2.5 outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100">
+        </label>
+        <label class="block">
+          <span class="text-sm font-medium text-slate-700">Password</span>
+          <input type="password" name="password" required class="mt-1 w-full rounded-lg border border-stone-200 px-3 py-2.5 outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100">
+        </label>
+        <button type="submit" class="flex w-full items-center justify-center gap-2 rounded-lg bg-emerald-700 px-4 py-2.5 font-medium text-white hover:bg-emerald-800">
+          <i data-lucide="log-in" class="h-4 w-4"></i> Masuk
+        </button>
+      </form>
+    </section>
+  </main>
+  <script>lucide.createIcons();</script>
 </body>
 </html>
-
